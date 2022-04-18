@@ -1,0 +1,20 @@
+二分法
+
+1. 在排序的输入集上二分，数据集有序(或者是有一定顺序)：
+  lc74. Search a 2D Matrix
+  lc240. Search a 2D Matrix II
+  lintcode585. Maximum Number in Mountain Sequence
+
+2. 输入集不一定要有顺序，但要有明确的true or false性质。比如等于true往左划分，等于false往右划分。
+  lc302. Smallest Rectangle Enclosing Black Pixels
+
+3. 在答案集(输出集)上划分，先确定答案集的大致范围，再根据条件，不断二分答案集，最终找到正确结果。划分的过程可以是按顺序，也可以是按true or false。
+  lintcode437. Copy Books
+
+总结：对于二分的问题，要有明确的可以将数据集二分的条件，一种是数据集有序(或者是有一定顺序)，一种是true or false。
+
+
+能坚持做完题目的你很棒！在做完这些题目后，有没有总结出二分法的一些特征呢？
+其实二分法可以被认为是将量级n压缩为量级logn的一种方法，比如最简单的二分查找有序数组中的数字，就是将O(n)复杂度变成了O(logn)，我们刚做完的矩阵查找，
+则是将 n * n 压缩成 n * logn。在很多时候，二分法都是一种很优美的查找技巧，比如C++中的upper_bound()，其内部就是使用二分法查找的。掌握了这个简
+单的技巧，一定能帮助你在面试中获得更多的解题灵感，助你先人一步。

@@ -1,0 +1,78 @@
+graph.dfs
+
+题目： 
+
+排列组合类：
+lc78. subsets 需要复习 
+lc90. subsets ii 需要复习
+permutations 需要复习
+permutations ii 需要复习
+lc17. Letter Combinations of a Phone Number
+lc22. Generate Parentheses；lc20. Valid Parentheses
+lc39. Combination Sum
+lc40. Combination Sum II
+lc377. Combination Sum IV
+lc216. Combination Sum III
+lc77. Combinations
+lc254. Factor Combinations 未做
+lc784. Letter Case Permutation 未做
+lc567. Permutation in String 未做
+lc131. Palindrome Partitioning
+
+
+
+
+图（给定grid或者需要自己造图）：
+lc417. Pacific Atlantic Water Flow
+lc529. Minesweeper
+lc314. Binary Tree Vertical Order Traversal 未做
+lc695. Max Area of Island
+lc463. Island Perimeter
+lc721. Accounts Merge
+lc684. Redundant Connection: create and dfs progressively *
+lc934. Shortest Bridge
+lc787. Cheapest Flights Within K Stops: memoization, dfs剪枝，普通dfs会超时 *
+lc130. Surrounded Regions
+lc694. Number of Distinct Islands
+lc545. Boundary of Binary Tree 未做
+lc733. Flood Fill
+lc797. All Paths From Source to Target
+lc1976. Number of Ways to Arrive at Destination 未做
+lc79. Word Search
+lc212. Word Search II *
+lc127. Word Ladder
+lc126. Word Ladder II: bfs+dfs *
+lc1319. Number of Operations to Make Network Connected *
+lc419. Battleships in a Board : follow up: one-pass,不用dfs或bfs
+lc399. Evaluate Division
+
+
+
+
+
+
+
+
+
+
+
+问题1
+combination
+要不要排序？什么情况下需要排序？ 九章ppt代码注释
+什么时候需要break？  continue？
+组合问题想成图？
+
+
+问题2
+邻接表，邻接矩阵造图。
+
+问题3
+无向图不走回头路。 v == pre continue
+
+问题4
+无向图找坏，detect cycle
+
+问题5
+图问题的时间复杂度
+
+问题6 unifind 并查集   MST：1135. Connecting Cities With Minimum Cost
