@@ -1,0 +1,8 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore .idea dir
+.idea
+
+# Ignore target dir
+target
