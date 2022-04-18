@@ -1,0 +1,39 @@
+----------------------------------------------------------------------------------------------------------------------------------------------
+方案1: 排序 + 双指针
+
+TwoSum()
+ArrayList  space: O(n)
+
+void add(int number)
+插入的新数据的时候，保证数组是有序的。
+方法1：每次插入数据的时候，都要排序一遍。time：O(nlogn)。
+方法2(better)：使用插入排序的一部分思想，每次插入数据的时候先把数据方法末尾，依次与前面的数据比较，如果前面的比后面的大，交换位置，否则，退出循环。time：O(n)。
+
+boolean find(int value)
+因为数据已经是升序，直接使用相向双指针即可。time: O(n)。
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+方案2: HashMap (见TwoSum1)
+
+TwoSum()
+HashMap  space: O(n)
+
+void add(int number)
+直接使用HashMap.put(key=number, value=count)插入数据的同时记录频次。 time: O(1)
+
+boolean find(int value)
+遍历HashMap，count = 1 和 count > 1 要分开讨论(if)。 time: O(n)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+方案3：ArrayList + HashMap (见TwoSum)
+TwoSum()
+ArrayList  space: O(n)
+
+void add(int number)
+直接使用ArrayList.add()插入新数据到末尾，不用排序。time: O(1)。
+
+boolean find(int value)
+HashSet space: O(n)
+思路和lc1的Solution一样，遍历ArrayList, 每次判断HashSet中有没有(value-number), 如果没有的，加入HashSet，如果有的话，return true。time：O(n)
