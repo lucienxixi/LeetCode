@@ -1,0 +1,1 @@
+CREATE synonym client FROME Customer
