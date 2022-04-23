@@ -1,3 +1,6 @@
+// 496. Next Greater Element I
+
+
 // monotonous stack
 // time: O(n) 
 // space: O(n)
