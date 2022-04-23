@@ -12,4 +12,7 @@ lc209. Minimum Size Subarray Sum
 lc152. Maximum Product Subarray 不是标准的prefix sum，但可以利用prefix sum的思想
 lc1314. Matrix Block Sum
 
+另一种prefix sum
+lc370. Range Addition
+lc1109. Corporate Flight Bookings 和lc370一模一样
 
