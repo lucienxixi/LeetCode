@@ -27,21 +27,19 @@ class Solution {
         }
         
         // reverse the first half of linked list
-        ListNode p2 = head;
-        ListNode p3 = p2.next;
-        p2.next = null;
-        ListNode temp = p2;
+        ListNode curNode = head;
+        ListNode preNode = null;
         
-        for (int i = 0; i < length / 2 - 1; i++) {            
-            p2 = p3;
-            p3 = p3.next;
-            p2.next = temp;
-            temp = p2;
+        for (int i = 0; i < length / 2; i++) {   
+            ListNode nextNode = curNode.next;
+            curNode.next = preNode;
+            preNode = curNode;
+            curNode = nextNode;
         }
         
         // calculate the sum
-        ListNode left = p2;
-        ListNode right = p3;
+        ListNode left = preNode;
+        ListNode right = curNode;
         int maxTwinSum = 0;
         
         for (int i = 0; i < length / 2; i++) {
