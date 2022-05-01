@@ -3,7 +3,7 @@
 
 // 看了tag，solved by myself
 
-// hashmap + sort
+// greedy + hashmap + sort
 class Solution {
     public int findLeastNumOfUniqueInts(int[] arr, int k) {
         Map<Integer, Integer> numToCnt = new HashMap<>();
